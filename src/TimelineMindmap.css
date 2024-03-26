@@ -1,0 +1,53 @@
+.tooltip {
+  position: fixed;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  visibility: hidden;
+}
+
+.timeline-mindmap:hover .tooltip {
+  visibility: visible;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 50%;
+  max-height: 60%;
+  overflow-y: auto;
+}
+
+.modal-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    max-width: 70%;
+  }
+}
